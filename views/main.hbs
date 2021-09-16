@@ -1,0 +1,23 @@
+<div class="container">
+<table class="table">
+ <legend>Lista de Producto</legend>
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">nombre</th>
+      <th scope="col">Precio</th>
+      <th scope="col">Foto</th>
+    </tr>
+  </thead>
+  <tbody>
+  {{#each listaproductos}}
+    <tr>
+      <th scope="row">{{this.id}}</th>
+      <td>{{this.title}}</td>
+      <td>{{this.price}}</td>
+      <td>{{this.thumbnail}}</td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+</div>
